@@ -1,6 +1,6 @@
 # Hi, I'm Mohit Vegad
 
-## iOS Developer | FinTech Specialist | London, UK
+## iOS Developer | London, UK
 
 Mid-Senior iOS Developer with 5+ years building production-grade native iOS applications for FinTech and consumer markets. Expert in Swift, UIKit, SwiftUI, MVVM + Coordinator architecture, and modern Swift Concurrency (async/await, Combine).
 
