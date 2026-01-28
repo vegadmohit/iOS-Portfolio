@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlaceDetailHeaderView" customModule="TripMate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="273"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Bj-vYN">
+                    <rect key="frame" x="0.0" y="0.0" width="446" height="273"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="amv-CN-hhz">
+                            <rect key="frame" x="0.0" y="0.0" width="446" height="273"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="amv-CN-hhz" secondAttribute="bottom" id="AQd-qY-2qH"/>
+                        <constraint firstAttribute="trailing" secondItem="amv-CN-hhz" secondAttribute="trailing" id="J73-7c-BhW"/>
+                        <constraint firstItem="amv-CN-hhz" firstAttribute="top" secondItem="Vaa-Bj-vYN" secondAttribute="top" id="UPE-jg-H6k"/>
+                        <constraint firstItem="amv-CN-hhz" firstAttribute="leading" secondItem="Vaa-Bj-vYN" secondAttribute="leading" id="oNe-8H-PQj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vaa-Bj-vYN" secondAttribute="bottom" id="GND-em-oae"/>
+                <constraint firstItem="Vaa-Bj-vYN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kec-ZP-JcE"/>
+                <constraint firstAttribute="trailing" secondItem="Vaa-Bj-vYN" secondAttribute="trailing" id="oMQ-aW-bXl"/>
+                <constraint firstAttribute="top" secondItem="Vaa-Bj-vYN" secondAttribute="top" id="r1J-3K-tad"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="amv-CN-hhz" id="v7X-ae-UJt"/>
+            </connections>
+            <point key="canvasLocation" x="-48.854961832061065" y="-105.28169014084507"/>
+        </view>
+    </objects>
+</document>

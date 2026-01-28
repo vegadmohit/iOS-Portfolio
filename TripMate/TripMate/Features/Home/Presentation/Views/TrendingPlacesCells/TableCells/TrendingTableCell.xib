@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendingTableCell" rowHeight="182" id="AES-1a-wEm" customClass="TrendingTableCell" customModule="TripMate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AES-1a-wEm" id="Cc2-AZ-h5Y">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Places" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-XD-SCV">
+                        <rect key="frame" x="16" y="15.999999999999998" width="343" height="19.333333333333329"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" name="brandBlack"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mWs-sz-28T">
+                        <rect key="frame" x="0.0" y="43.333333333333329" width="375" height="138.66666666666669"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="thc-2I-q0s">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="mWs-sz-28T" firstAttribute="leading" secondItem="Cc2-AZ-h5Y" secondAttribute="leading" id="27g-w2-IHr"/>
+                    <constraint firstAttribute="trailing" secondItem="lpD-XD-SCV" secondAttribute="trailing" constant="16" id="8xc-5r-Wg4"/>
+                    <constraint firstItem="lpD-XD-SCV" firstAttribute="top" secondItem="Cc2-AZ-h5Y" secondAttribute="top" constant="16" id="FWr-Ek-5mK"/>
+                    <constraint firstAttribute="trailing" secondItem="mWs-sz-28T" secondAttribute="trailing" id="GVa-RW-t7r"/>
+                    <constraint firstItem="mWs-sz-28T" firstAttribute="top" secondItem="lpD-XD-SCV" secondAttribute="bottom" constant="8" id="HFx-0u-xfJ"/>
+                    <constraint firstAttribute="bottom" secondItem="mWs-sz-28T" secondAttribute="bottom" id="YwB-QX-k0Z"/>
+                    <constraint firstItem="lpD-XD-SCV" firstAttribute="leading" secondItem="Cc2-AZ-h5Y" secondAttribute="leading" constant="16" id="aQO-RE-GUR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ldb-1u-r4a"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="mWs-sz-28T" id="s1z-Ci-nTU"/>
+            </connections>
+            <point key="canvasLocation" x="-77.099236641221367" y="147.18309859154931"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="brandBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
