@@ -10,8 +10,8 @@ protocol AttractionRepositoryProtocol {
 
 class AttractionRepository: AttractionRepositoryProtocol {
     
-    let latitude = 51.5074
-    let longitude = -0.1278
+    let latitude = 51.50742
+    let longitude = -0.12782
     
     private let apiClient: APIClient
     private let apiKey: String
